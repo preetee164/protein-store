@@ -188,6 +188,30 @@ text-decoration:none;
 font-weight:bold;
 box-shadow:0 0 15px rgba(0,0,0,0.3);
 }
+ .categories{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+padding:30px;
+}
+
+.cat-box{
+background:#1e1e1e;
+padding:25px;
+width:180px;
+text-align:center;
+border-radius:12px;
+font-size:20px;
+font-weight:bold;
+border:2px solid #ff7a00;
+transition:0.3s;
+}
+
+.cat-box:hover{
+transform:scale(1.05);
+background:#ff7a00;
+}
 </style>
 </head>
 
@@ -222,6 +246,12 @@ box-shadow:0 0 15px rgba(0,0,0,0.3);
 
 <a href="#products" class="shop-btn">SHOP NOW →</a>
 </section>
+ <div class="categories">
+<div class="cat-box">🥤 Protein</div>
+<div class="cat-box">⚡ Pre Workout</div>
+<div class="cat-box">💪 Mass Gainer</div>
+<div class="cat-box">🧪 Creatine</div>
+</div>
   <div class="features">✅ 100% Genuine Products</div>
   <div class="features">🚚 Fast Delivery</div>
   <div class="features">🔒 Secure Ordering</div>
