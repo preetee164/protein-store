@@ -35,3 +35,21 @@ body{
     align-items:center;
     flex-wrap:wrap;
 }
+/* ===========================
+   TOP BAR
+=========================== */
+
+.top-bar{
+    background:#ff6b00;
+    color:#fff;
+    padding:12px 0;
+    font-size:14px;
+}
+
+.top-bar .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+}p
