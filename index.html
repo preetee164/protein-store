@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Muscle Theory</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#111;
+color:white;
+}
+
+header{
+text-align:center;
+padding:60px 20px;
+background:#000;
+}
+
+header h1{
+font-size:50px;
+margin:0;f
+}
+
+header p{
+color:#bbb;
+}
+.hero{
+text-align:center;
+padding:100px 20px;
+background:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600');
+background-size:cover;
+background-position:center;
+ min-height:500px;
+}
+
+.hero h1{
+font-size:70px;
+margin:0;
+color:white;
+text-shadow:2px 2px 10px black;
+}
+
+.hero p{
+font-size:22px;
+color:white;
+}
+ .hero img{
+width:500px;
+max-width:90%;
+filter:drop-shadow(0 0 30px #ff7a00);
+margin-top:20px;
+}
+
+.shop-btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+background:#ff7a00;
+color:white;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+}
+ .shop-btn:hover{
+background:#ff9500;
+}
+.products{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:#1e1e1e;
+width:280px;
+border-radius:15px;
+padding:20px;
+text-align:center;
+box-shadow:0 0 15px rgba(255,255,255,0.1);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.price{
+font-size:24px;
+font-weight:bold;
+color:#00ff88;
+}
+
+button{
+background:#25D366;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#000;
+margin-top:30px;
+}
+.features{
+display:inline-block;
+background:#1e1e1e;
+padding:20px 30px;
+margin:10px;
+border-radius:12px;
+width:220px;
+text-align:center;
+border:1px solid #333;
+font-weight:bold;
+ box-shadow:0 0 10px rgba(255,122,0,0.2);
+}
+ .features:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px rgba(255,122,0,0.5);
+transition:0.3s;
+}
+.topbar{
+background:#ff7a00;
+color:white;
+padding:10px;
+text-align:center;
+font-weight:bold;
+margin-top:20px;
+border-radius:10px;
+}
+ .navbar{
+background:#111;
+padding:15px;
+text-align:center;
+border-bottom:2px solid #ff7a00;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-weight:bold;
+font-size:18px;
+ transition:0.3s;
+}
+
+.navbar a:hover{
+color:#ff7a00;
+}
+ .search-box{
+text-align:center;
+padding:20px;
+background:#111;
+}
+
+.search-box input{
+width:60%;
+padding:15px;
+font-size:16px;
+border:none;
+border-radius:8px;
+}
+
+.search-box button{
+padding:15px 25px;
+background:#ff7a00;
+color:white;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+ .section-title{
+text-align:center;
+font-size:50px;
+margin:40px 0 20px;
+color:#ff7a00;
+font-weight:bold;
+}
+ .whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+ .categories{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:30px;
+max-width:1000px;
+margin:auto;
+}
+
+.cat-box{
+background:#1e1e1e;
+padding:25px;
+width:200px;
+text-align:center;
+border-radius:12px;
+font-size:20px;
+font-weight:bold;
+border:2px solid #ff7a00;
+ box-shadow:0 0 15px rgba(255,122,0,0.3);
+transition:0.3s;
+}
+
+.cat-box:hover{
+transform:translateY(-5px) scale(1.05);
+background:#ff7a00;
+ color:black;
+box-shadow:0 0 25px #ff7a00;
+cursor:pointer;
+}
+ .section-title{
+text-align:center;
+font-size:45px;
+color:#ff7a00;
+font-weight:bold;
+margin:50px 0 30px;
+text-transform:uppercase;
+letter-spacing:2px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>💪 Muscle Theory </h1>
+<p>Premium Supplements For Strength, Recovery & Performance</p>
+</header>
+ <div class="topbar">
+🚚 Free Shipping Above ₹1499 | ✅ 100% Authentic Products | 📞 7042411315
+</div>
+ <nav class="navbar">
+<a href="#">HOME</a>
+<a href="#products">SHOP</a>
+<a href="#">BRANDS</a>
+<a href="#">COMBOS</a>
+<a href="#">OFFERS</a>
+<a href="#">CONTACT US</a>
+</nav>
+ <div class="search-box">
+<input type="text" placeholder="Search supplements...">
+<button>🔍 Search</button>
+</div>
+<section class="hero">
+<h1>REAL FUEL.<br>REAL RESULTS.</h1>
+<p>Premium Whey Protein, Creatine & Mass Gainers</p>
+
+<img src="whey-protein.jpg" width="500">
+
+<br><br>
+
+<a href="#products" class="shop-btn">SHOP NOW →</a>
+</section>
+ <h2 class="section-title">🏋️ Shop By Category</h2>
+ <div class="categories">
+<div class="cat-box">🥤 Protein</div>
+<div class="cat-box">💪 Mass Gainer</div>
+<div class="cat-box">⚡ Pre Workout</div>
+<div class="cat-box">🧪 Creatine</div>
+<div class="cat-box">💊 Vitamins</div>
+<div class="cat-box">🔥 Fat Burners</div>
+<div class="cat-box">🎒 Accessories</div>
+<div class="cat-box">👕 Apparel</div>
+</div>
+  <div class="features">
+📦 Wide Range<br>
+<small>5000+ Products</small>
+</div>
+
+<div class="features">
+🏆 Top Brands<br>
+<small>100+ Trusted Brands</small>
+</div>
+
+<div class="features">
+↩️ Easy Returns<br>
+<small>Hassle Free Returns</small>
+</div>
+
+<div class="features">
+🎧 Expert Support<br>
+<small>7 Days A Week</small>
+</div>
+
+<div class="categories">
+    <div class="cat-box">🏆 MuscleTech</div>
+    <div class="cat-box">🥇 Optimum Nutrition</div>
+    <div class="cat-box">🔵 GNC Live Well</div>
+    <div class="cat-box">🟢 AS-IT-IS</div>
+    <div class="cat-box">💪 Avvatar</div>
+    <div class="cat-box">⚡ Nakpro</div>
+    <div class="cat-box">🔥 MuscleBlaze</div>
+    <div class="cat-box">⭐ BigMuscles</div>
+</div>
+
+<br>
+ <h2 class="section-title">🔥 Best Sellers</h2>
+<div class="products">
+
+<div class="card">
+<img src="whey-protein.jpg">
+<h2>Whey Protein</h2>
+<p class="price">₹1499</p>
+<a href="https://wa.me/917042411315?text=Hello%20Muscle%20Theory,%20I%20want%20to%20order">
+<button>Order Now</button>
+</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500">
+<h2>Creatine</h2>
+<p class="price">₹799</p>
+<a href="https://wa.me/917042411315?text=Hello%20Muscle%20Theory,%20I%20want%20to%20order">
+<button>Order Now</button>
+</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500">
+<h2>Mass Gainer</h2>
+<p class="price">₹1899</p>
+<a href="https://wa.me/917042411315?text=Hello%20Muscle%20Theory,%20I%20want%20to%20order">
+<button>Order Now</button>
+</a>
+</div>
+
+</div>
+
+<footer>
+<h3>Contact Us</h3>
+<p>WhatsApp: +91 7042411315</p>
+<p>Instagram: @musclefuel.in</p>
+</footer>
+<a href="https://wa.me/917042411315" class="whatsapp">
+📱 Order Now
+</a>
+</body>
+</html>
