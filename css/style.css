@@ -294,6 +294,8 @@ body{
 }
 
 .product-card{
+    position: relative;
+overflow: hidden;
     background:#1b1b1b;
     border-radius:18px;
     overflow:hidden;
@@ -314,16 +316,19 @@ body{
     object-fit:cover;
 }
 
-.sale-badge{
+    .sale-badge{
     position:absolute;
     top:15px;
     left:15px;
-    background:#ff6b00;
+    background:linear-gradient(135deg,#ff4d4d,#ff6b00);
     color:#fff;
     padding:8px 14px;
-    border-radius:30px;
     font-size:13px;
-    font-weight:bold;
+    font-weight:700;
+    border-radius:50px;
+    z-index:10;
+    box-shadow:0 8px 20px rgba(255,107,0,.35);
+}
 }
 
 .product-card h4{
@@ -357,18 +362,149 @@ body{
 }
 
 .product-card button{
-    width:85%;
-    margin-bottom:25px;
-    padding:14px;
-    border:none;
+    width:100%;
     background:#ff6b00;
     color:#fff;
+    border:none;
+    padding:14px;
+    border-radius:10px;
     font-size:16px;
-    border-radius:8px;
+    font-weight:600;
     cursor:pointer;
     transition:.3s;
 }
 
 .product-card button:hover{
     background:#ff8c1a;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(255,107,0,.35);
+}
+}
+
+.product-card button:hover{
+    background:#ff8c1a;
+}
+/*==========================
+    TOP BRANDS
+===========================*/
+
+.brands{
+    padding:90px 0;
+    background:#111;
+}
+
+.brand-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:25px;
+}
+
+.brand-card{
+    background:#1b1b1b;
+    border:1px solid #2d2d2d;
+    border-radius:15px;
+    padding:35px 15px;
+    text-align:center;
+    font-weight:700;
+    transition:.35s;
+    cursor:pointer;
+    color:#fff;
+}
+
+.brand-card:hover{
+    transform:translateY(-8px);
+    border-color:#ff6b00;
+    color:#ff6b00;
+    box-shadow:0 15px 35px rgba(255,107,0,.25);
+}
+.product-icons{
+
+position:absolute;
+
+top:20px;
+
+right:15px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.product-icons span{
+
+width:42px;
+
+height:42px;
+
+background:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:50%;
+
+cursor:pointer;
+
+font-size:18px;
+
+transition:.3s;
+
+box-shadow:0 5px 15px rgba(0,0,0,.25);
+
+}
+
+.product-icons span:hover{
+
+background:#ff6b00;
+
+transform:scale(1.15);
+
+}
+/* Product Hover Effects */
+
+.product-icons{
+    position:absolute;
+    top:20px;
+    right:-60px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    transition:.4s;
+    z-index:10;
+}
+
+.product-card:hover .product-icons{
+    right:15px;
+}
+
+.product-icons span{
+    width:42px;
+    height:42px;
+    background:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.product-icons span:hover{
+    background:#ff6b00;
+    transform:scale(1.12);
+}
+
+.product-card img{
+    transition:.5s;
+}
+
+.product-card:hover img{
+    transform:scale(1.08);
 }
