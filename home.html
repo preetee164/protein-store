@@ -1,356 +1,264 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Muscle Theory</title>
-<link rel="stylesheet" href="css/style.css">
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#111;
-color:white;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle Theory | Premium Supplements</title>
 
-header{
-text-align:center;
-padding:60px 20px;
-background:#000;
-}
-
-header h1{
-font-size:50px;
-margin:0;f
-}
-
-header p{
-color:#bbb;
-}
-.hero{
-text-align:center;
-padding:100px 20px;
-background:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600');
-background-size:cover;
-background-position:center;
- min-height:500px;
-}
-
-.hero h1{
-font-size:70px;
-margin:0;
-color:white;
-text-shadow:2px 2px 10px black;
-}
-
-.hero p{
-font-size:22px;
-color:white;
-}
- .hero img{
-width:500px;
-max-width:90%;
-filter:drop-shadow(0 0 30px #ff7a00);
-margin-top:20px;
-}
-
-.shop-btn{
-display:inline-block;
-margin-top:25px;
-padding:15px 35px;
-background:#ff7a00;
-color:white;
-text-decoration:none;
-font-weight:bold;
-border-radius:8px;
-}
- .shop-btn:hover{
-background:#ff9500;
-}
-.products{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:20px;
-padding:40px;
-}
-
-.card{
-background:#1e1e1e;
-width:280px;
-border-radius:15px;
-padding:20px;
-text-align:center;
-box-shadow:0 0 15px rgba(255,255,255,0.1);
-}
-
-.card img{
-width:100%;
-border-radius:10px;
-}
-
-.price{
-font-size:24px;
-font-weight:bold;
-color:#00ff88;
-}
-
-button{
-background:#25D366;
-color:white;
-border:none;
-padding:12px 20px;
-border-radius:8px;
-cursor:pointer;
-font-size:16px;
-}
-
-footer{
-text-align:center;
-padding:30px;
-background:#000;
-margin-top:30px;
-}
-.features{
-display:inline-block;
-background:#1e1e1e;
-padding:20px 30px;
-margin:10px;
-border-radius:12px;
-width:220px;
-text-align:center;
-border:1px solid #333;
-font-weight:bold;
- box-shadow:0 0 10px rgba(255,122,0,0.2);
-}
- .features:hover{
-transform:translateY(-5px);
-box-shadow:0 0 20px rgba(255,122,0,0.5);
-transition:0.3s;
-}
-.topbar{
-background:#ff7a00;
-color:white;
-padding:10px;
-text-align:center;
-font-weight:bold;
-margin-top:20px;
-border-radius:10px;
-}
- .navbar{
-background:#111;
-padding:15px;
-text-align:center;
-border-bottom:2px solid #ff7a00;
-}
-
-.navbar a{
-color:white;
-text-decoration:none;
-margin:0 20px;
-font-weight:bold;
-font-size:18px;
- transition:0.3s;
-}
-
-.navbar a:hover{
-color:#ff7a00;
-}
- .search-box{
-text-align:center;
-padding:20px;
-background:#111;
-}
-
-.search-box input{
-width:60%;
-padding:15px;
-font-size:16px;
-border:none;
-border-radius:8px;
-}
-
-.search-box button{
-padding:15px 25px;
-background:#ff7a00;
-color:white;
-border:none;
-border-radius:8px;
-font-weight:bold;
-cursor:pointer;
-}
- .section-title{
-text-align:center;
-font-size:50px;
-margin:40px 0 20px;
-color:#ff7a00;
-font-weight:bold;
-}
- .whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 0 15px rgba(0,0,0,0.3);
-}
- .categories{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-padding:30px;
-max-width:1000px;
-margin:auto;
-}
-
-.cat-box{
-background:#1e1e1e;
-padding:25px;
-width:200px;
-text-align:center;
-border-radius:12px;
-font-size:20px;
-font-weight:bold;
-border:2px solid #ff7a00;
- box-shadow:0 0 15px rgba(255,122,0,0.3);
-transition:0.3s;
-}
-
-.cat-box:hover{
-transform:translateY(-5px) scale(1.05);
-background:#ff7a00;
- color:black;
-box-shadow:0 0 25px #ff7a00;
-cursor:pointer;
-}
- .section-title{
-text-align:center;
-font-size:45px;
-color:#ff7a00;
-font-weight:bold;
-margin:50px 0 30px;
-text-transform:uppercase;
-letter-spacing:2px;
-}
-</style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-<h1>💪 Muscle Theory </h1>
-<p>Premium Supplements For Strength, Recovery & Performance</p>
-</header>
- <div class="topbar">
-🚚 Free Shipping Above ₹1499 | ✅ 100% Authentic Products | 📞 7042411315
-</div>
- <nav class="navbar">
-<a href="#">HOME</a>
-<a href="#products">SHOP</a>
-<a href="#">BRANDS</a>
-<a href="#">COMBOS</a>
-<a href="#">OFFERS</a>
-<a href="#">CONTACT US</a>
-</nav>
- <div class="search-box">
-<input type="text" placeholder="Search supplements...">
-<button>🔍 Search</button>
-</div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <p>🚚 Free Shipping Above ₹1499</p>
+            <p>100% Authentic Supplements</p>
+            <p>📞 +91 7042411315</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="container">
+
+            <div class="logo">
+                💪 Muscle Theory
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search Supplements...">
+                <button>Search</button>
+            </div>
+
+            <div class="header-icons">
+                <a href="#">Account</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Cart</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="container">
+
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Brands</a>
+            <a href="#">Categories</a>
+            <a href="#">Offers</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+    </nav>
+    <!-- Hero Section -->
+
 <section class="hero">
-<h1>REAL FUEL.<br>REAL RESULTS.</h1>
-<p>Premium Whey Protein, Creatine & Mass Gainers</p>
 
-<img src="whey-protein.jpg" width="500">
+    <div class="hero-overlay"></div>
 
-<br><br>
+    <div class="container hero-content">
 
-<a href="#products" class="shop-btn">SHOP NOW →</a>
+        <div class="hero-left">
+
+            <span class="hero-tag">
+                India's Trusted Supplement Store
+            </span>
+
+            <h1>
+                Fuel Your Strength.<br>
+                Transform Your Body.
+            </h1>
+
+            <p>
+                Discover premium Whey Protein, Creatine,
+                Mass Gainers, Pre Workout & Sports Nutrition
+                from the world's top brands.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#" class="btn-primary">
+                    Shop Now
+                </a>
+
+                <a href="#" class="btn-secondary">
+                    Explore Products
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+                    <h3>5000+</h3>
+                    <span>Happy Customers</span>
+                </div>
+
+                <div>
+                    <h3>150+</h3>
+                    <span>Products</span>
+                </div>
+
+                <div>
+                    <h3>25+</h3>
+                    <span>Top Brands</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
- <h2 class="section-title">🏋️ Shop By Category</h2>
- <div class="categories">
-<div class="cat-box">🥤 Protein</div>
-<div class="cat-box">💪 Mass Gainer</div>
-<div class="cat-box">⚡ Pre Workout</div>
-<div class="cat-box">🧪 Creatine</div>
-<div class="cat-box">💊 Vitamins</div>
-<div class="cat-box">🔥 Fat Burners</div>
-<div class="cat-box">🎒 Accessories</div>
-<div class="cat-box">👕 Apparel</div>
-</div>
-  <div class="features">
-📦 Wide Range<br>
-<small>5000+ Products</small>
-</div>
+<!-- Categories -->
 
-<div class="features">
-🏆 Top Brands<br>
-<small>100+ Trusted Brands</small>
-</div>
+<section class="categories">
 
-<div class="features">
-↩️ Easy Returns<br>
-<small>Hassle Free Returns</small>
-</div>
+    <div class="container">
 
-<div class="features">
-🎧 Expert Support<br>
-<small>7 Days A Week</small>
-</div>
+        <h2 class="section-title">Shop By Category</h2>
 
-<div class="categories">
-    <div class="cat-box">🏆 MuscleTech</div>
-    <div class="cat-box">🥇 Optimum Nutrition</div>
-    <div class="cat-box">🔵 GNC Live Well</div>
-    <div class="cat-box">🟢 AS-IT-IS</div>
-    <div class="cat-box">💪 Avvatar</div>
-    <div class="cat-box">⚡ Nakpro</div>
-    <div class="cat-box">🔥 MuscleBlaze</div>
-    <div class="cat-box">⭐ BigMuscles</div>
-</div>
+        <div class="category-grid">
 
-<br>
- <h2 class="section-title">🔥 Best Sellers</h2>
-<div class="products">
+            <div class="category-card">
+                <div class="category-icon">🥤</div>
+                <h3>Whey Protein</h3>
+            </div>
 
-<div class="card">
-<img src="whey-protein.jpg">
-<h2>Whey Protein</h2>
-<p class="price">₹1499</p>
-<a href="https://wa.me/917042411315?text=Hello%20Muscle%20Theory,%20I%20want%20to%20order">
-<button>Order Now</button>
-</a>
-</div>
+            <div class="category-card">
+                <div class="category-icon">⚡</div>
+                <h3>Creatine</h3>
+            </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500">
-<h2>Creatine</h2>
-<p class="price">₹799</p>
-<a href="https://wa.me/917042411315?text=Hello%20Muscle%20Theory,%20I%20want%20to%20order">
-<button>Order Now</button>
-</a>
-</div>
+            <div class="category-card">
+                <div class="category-icon">💪</div>
+                <h3>Mass Gainer</h3>
+            </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500">
-<h2>Mass Gainer</h2>
-<p class="price">₹1899</p>
-<a href="https://wa.me/917042411315?text=Hello%20Muscle%20Theory,%20I%20want%20to%20order">
-<button>Order Now</button>
-</a>
-</div>
+            <div class="category-card">
+                <div class="category-icon">🔥</div>
+                <h3>Pre Workout</h3>
+            </div>
 
-</div>
+            <div class="category-card">
+                <div class="category-icon">❤️</div>
+                <h3>Vitamins</h3>
+            </div>
 
-<footer>
-<h3>Contact Us</h3>
-<p>WhatsApp: +91 7042411315</p>
-<p>Instagram: @musclefuel.in</p>
-</footer>
-<a href="https://wa.me/917042411315" class="whatsapp">
-📱 Order Now
-</a>
+            <div class="category-card">
+                <div class="category-icon">🏃</div>
+                <h3>Fat Burner</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Featured Products -->
+
+<section class="featured-products">
+
+    <div class="container">
+
+        <h2 class="section-title">Featured Products</h2>
+
+        <div class="products-grid">
+
+            <div class="product-card">
+
+                <span class="sale-badge">SALE</span>
+
+                <img src="image/whey-protein.jpg" alt="Protein">
+
+                <h4>Optimum Nutrition</h4>
+
+                <h3>Gold Standard Whey</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐ <span>(4.9)</span>
+                </div>
+
+                <div class="price">
+
+                    <span class="new-price">₹4,699</span>
+
+                    <span class="old-price">₹5,499</span>
+
+                </div>
+
+                <button>Add To Cart</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <span class="sale-badge">SALE</span>
+
+                <img src="image/whey-protein.jpg" alt="Protein">
+
+                <h4>MuscleTech</h4>
+
+                <h3>NitroTech Whey</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐ <span>(4.8)</span>
+                </div>
+
+                <div class="price">
+
+                    <span class="new-price">₹3,999</span>
+
+                    <span class="old-price">₹4,699</span>
+
+                </div>
+
+                <button>Add To Cart</button>
+
+            </div>
+
+            <div class="product-card">
+
+                <span class="sale-badge">NEW</span>
+
+                <img src="image/whey-protein.jpg" alt="Protein">
+
+                <h4>GNC</h4>
+
+                <h3>Pro Performance Whey</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐ <span>(4.7)</span>
+                </div>
+
+                <div class="price">
+
+                    <span class="new-price">₹3,499</span>
+
+                    <span class="old-price">₹3,999</span>
+
+                </div>
+
+                <button>Add To Cart</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 </body>
+
 </html>
